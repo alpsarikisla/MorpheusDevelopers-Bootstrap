@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Bootstrap Butonlar</title>
+        <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h2>Buton Görünümleri</h2>
+            <button type="button" class="btn">Standart</button>
+            <button type="button" class="btn btn-primary">primary</button>
+            <a href="#" class="btn btn-secondary">Secondary</a>
+            <input type="submit" class="btn btn-success" value="Success">
+            <a href="#" class="btn btn-info">info</a>
+            <a href="#" class="btn btn-dark">dark</a>
+            <a href="#" class="btn btn-light">light</a>
+            <a href="#" class="btn btn-danger">danger</a>
+            <a href="#" class="btn btn-warning">warning</a>
+            <a href="#" class="btn btn-link">link</a>
+        </div>
+        <div class="container mt-3">
+             <h2>Outline Görünümü</h2>
+            <button type="button" class="btn btn-outline-primary">primary</button>
+            <button type="button" class="btn btn-outline-secondary">secondary</button>
+            <button type="button" class="btn btn-outline-warning">warning</button>
+            <button type="button" class="btn btn-outline-danger">danger</button>
+            <button type="button" class="btn btn-outline-info">info</button>
+            <button type="button" class="btn btn-outline-success">success</button>
+            <button type="button" class="btn btn-outline-dark">dark</button>
+            <button type="button" class="btn btn-outline-light">light</button>
+        </div>
+        <div class="container mt-3">
+            <h2>Buton boyutları</h2>
+             <button type="button" class="btn btn-success btn-lg">Büyük Buton</button>
+             <button type="button" class="btn btn-success">Standart Buton</button>
+             <button type="button" class="btn btn-success btn-sm">Küçük Buton</button>
+        </div>
+        <div class="container mt-3">
+            <h2>Tam ekran Butonlar</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-block">Tam ekran</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-block">Tam ekran</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-block">Tam ekran</button>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-1">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-block">Tam ekran</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <h2>Disabled Button</h2>
+            <button type="button" class="btn btn-primary">Aktif</button>
+            <button type="button" class="btn btn-primary" disabled>Disabled</button>
+        </div>
+        <div class="container mt-3">
+            <h2>Spinner Button</h2>
+             <button type="button" class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+             </button>
+             <button type="button" class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span> İşlem Yapılıyor
+             </button>
+             <button type="button" class="btn btn-warning">
+                <span class="spinner-grow spinner-grow-sm"></span> İşlem Yapılıyor
+             </button>
+        </div>
+        <div class="container mt-3">
+             <h2>Buton Grupları</h2>
+             <div class="btn-group">
+                <a href="#" class="btn btn-primary">Görüntüle</a>
+                <a href="#" class="btn btn-warning">Düzenle</a>
+                <a href="#" class="btn btn-danger">Sil</a>
+             </div>
+        </div>
+        <div class="container mt-3">
+             <h2>Buton Grupları</h2>
+             <div class="btn-group">
+                <a href="#" class="btn btn-primary">Görüntüle</a>
+                <a href="#" class="btn btn-warning">Düzenle</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Sil</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Soft Delete</a>
+                        <a href="#"class="dropdown-item">Hard Delete</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Bootstrap uygulama 1</title>
+        <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Isim</th>
+                                <th>Soyisim</th>
+                                <th>Telefon</th>
+                                <th>Seçenekler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Murtaza</td>
+                                <td>Şuayipoğlu</td>
+                                <td>530 XXX XX XX</td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-info" data-bs-toggle="tooltip" title="Görüntüle"><i class="fa-solid fa-eye text-white"></i></a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Düzenle"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                        <a href="#" class="btn btn-danger" data-bs-toggle="tooltip" title="Sil"><i class="fa-solid fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Hede</td>
+                                <td>Hüde</td>
+                                <td>530 XXX XX XX</td>
+                                  <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-info" data-bs-toggle="tooltip" title="Görüntüle"><i class="fa-solid fa-eye text-white"></i></a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Düzenle"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                        <a href="#" class="btn btn-danger" data-bs-toggle="tooltip" title="Sil"><i class="fa-solid fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Bla</td>
+                                <td>Bla</td>
+                                <td>530 XXX XX XX</td>
+                                 <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-info" data-bs-toggle="tooltip" title="Görüntüle"><i class="fa-solid fa-eye text-white"></i></a>
+                                        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Düzenle"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                        <a href="#" class="btn btn-danger" data-bs-toggle="tooltip" title="Sil"><i class="fa-solid fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        </script>
+    </body>
+</html>

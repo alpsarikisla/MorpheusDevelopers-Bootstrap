@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Bootstrap'e Başlarken</title>
+        <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+       
+        <div class="container mt-3">
+            <h2>Badge Kullanımı <span class="badge bg-success">Yeni Konu</span></h2>
+            <label class="badge bg-primary">primary</label>
+            <label class="badge bg-success">success</label>
+            <label class="badge bg-secondary">secondary</label>
+            <label class="badge bg-warning">warning</label>
+            <label class="badge bg-danger">danger</label>
+            <label class="badge bg-info">info</label>
+            <label class="badge bg-dark">dark</label>
+            <label class="badge bg-Light">Light</label>
+        </div>
+         <div class="container mt-3">
+            <label class="badge bg-primary rounded-pill">primary</label>
+            <label class="badge bg-success rounded-pill">success</label>
+            <label class="badge bg-secondary rounded-pill">secondary</label>
+            <label class="badge bg-warning rounded-pill">warning</label>
+            <label class="badge bg-danger rounded-pill">danger</label>
+            <label class="badge bg-info rounded-pill">info</label>
+            <label class="badge bg-dark rounded-pill">dark</label>
+            <label class="badge bg-Light rounded-pill">Light</label>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Isim</th>
+                                <th>Soyisim</th>
+                                <th>Telefon</th>
+                                <th>Durum</th>
+                                <th>Admin</th>
+                                <th>Seçenekler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Murtaza</td>
+                                <td>Şuayipoğlu</td>
+                                <td>530 XXX XX XX</td>
+                                <td><label class="badge bg-success">Aktif Üye</label></td>
+                                <td></td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-info"><i class="fa-solid fa-eye text-white"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                        <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Hede</td>
+                                <td>Hüde</td>
+                                <td>530 XXX XX XX</td>
+                                <td><label class="badge bg-secondary">Askıya Alınmış</label></td>
+                                <td></td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-info" ><i class="fa-solid fa-eye text-white"></i></a>
+                                        <a href="#" class="btn btn-primary" ><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                        <a href="#" class="btn btn-danger" ><i class="fa-solid fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Bla</td>
+                                <td>Bla</td>
+                                <td>530 XXX XX XX</td>
+                                <td><label class="badge bg-success">Aktif Üye</label></td>
+                                <td><label class="badge rounded-pill bg-warning"><i class="fa-solid fa-certificate"></i></label></td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-info" ><i class="fa-solid fa-eye text-white"></i></a>
+                                        <a href="#" class="btn btn-primary" ><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                        <a href="#" class="btn btn-danger" ><i class="fa-solid fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <a href="#" class="btn btn-primary">Siparişler <span class="badge bg-danger">3</span></a>
+        </div>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

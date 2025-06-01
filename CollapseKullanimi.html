@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Bootstrap'e Başlarken</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div class="container mt-3">
+            <button type="button" class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#kutu">Havalı giriş yap</button>
+            <div class="collapse show" id="kutu">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus pariatur veritatis, ipsa expedita laudantium eos voluptatibus inventore obcaecati iure explicabo omnis placeat nam, molestiae recusandae possimus aut enim. Minus laudantium provident corporis beatae debitis quod, eius eveniet vitae molestiae dolore. Accusantium soluta consectetur assumenda quod nam. Veniam debitis explicabo maxime.
+            </div>
+       </div>
+       <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="akordiyon">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse1" class="btn " data-bs-toggle="collapse">Akordiyon 1</a>
+                            </div>
+                            <div class="collapse show" data-bs-parent="#akordiyon" id="collapse1">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo animi doloremque tenetur saepe nam exercitationem quam voluptas accusantium repudiandae!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse2" class="collapsed btn" data-bs-toggle="collapse">Akordiyon 2</a>
+                            </div>
+                            <div class="collapse" data-bs-parent="#akordiyon" id="collapse2">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo animi doloremque tenetur saepe nam exercitationem quam voluptas accusantium repudiandae!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </body>
+</html>

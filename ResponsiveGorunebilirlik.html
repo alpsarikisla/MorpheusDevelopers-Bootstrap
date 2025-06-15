@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Responsive Görünebilirlik</title>
+    <link href="bootstrap-5.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-primary text-white d-inline p-2 m-2"> Div 1 </div>
+                <div class="bg-secondary text-white d-inline p-2 m-2"> Div 2 </div>
+            </div>
+            <div class="col-md-4">
+                <span class="bg-primary text-white d-block p-2 m-2"> span 1 </span>
+                <span class="bg-secondary text-white d-block p-2 m-2"> span 2 </span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>her zaman gizli</th>
+                    <th>sadece xs te yok et</th>
+                    <th>sadec sm de yok et</th>
+                    <th>xxl gizli</th>
+                    <th>Yazdırırken yok et</th>
+                    <th>Sadece smde göster</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>
+                    <span class="bg-primary text-white d-none">d-none</span>
+                </td>
+                <td>
+                    <span class="bg-primary text-white d-none d-sm-block">d-none d-sm-block</span>
+                </td>
+                <td>
+                    <span class="bg-primary text-white d-sm-none d-md-block">d-none d-sm-block</span>
+                </td>
+                <td>
+                    <span class="bg-primary text-white d-xxl-none">d-xxl-none</span>
+                </td>
+                <td>
+                    <span class="bg-primary text-white d-print-none">Ben Burdayım</span>
+                </td>
+                 <td>
+                    <span class="bg-primary text-white d-none d-sm-block d-md-none"> d-none d-sm-block d-md-none</span>
+                </td>
+            </tbody>
+        </table>
+    </div>
+    <script src="bootstrap-5.3.6/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.6/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

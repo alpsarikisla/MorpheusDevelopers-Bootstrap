@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Form Kontrolleri</title>
+    <link href="bootstrap-5.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="height: 2000px;">
+    <div class="container mt-3">
+       <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Textbox ve button</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label" for="tbisim">İsim :</label>
+                        <input type="text" class="form-control" id="tbisim" placeholder="İsminizi yazınız">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="tbsoyisim">Soyisim:</label>
+                        <input type="text" class="form-control" id="tbsoyisim" placeholder="Soisim yazınız">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="tbkimlik">Kimlik No:</label>
+                        <input type="text" class="form-control" id="tbkimlik" placeholder="Kimlik No yazınız" disabled>
+                    </div>
+                     <div class="mb-3">
+                        <label class="form-label" for="tbpasaport">Pasaport No:</label>
+                        <input type="text" class="form-control" id="tbpasaport" placeholder="Pasaport No yazınız" readonly>
+                    </div>
+                    <div class="mt-3 mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Large">
+                    </div>
+                    <div class="mt-3 mb-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Small">
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Textarea</h3>
+                </div>
+                <div class="card-body">
+                    <label class="form-label">Adres:</label>
+                    <textarea class="form-control" rows="8"></textarea>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-secondary">İptal</a>
+                    <a href="#" class="btn btn-primary">Gönder</a>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h3>Renk Seçici</h3>
+                </div>
+                <div class="card-body">
+                    <label>Renk Seçiniz</label>
+                    <input type="color" class="form-control form-control-color" value="#a52a2a">
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Inline Controls</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                         <div class="col">
+                            <label>İsim:</label>
+                            <input type="text" class="form-control-plaintext" placeholder="______________________________">
+                        </div>
+                        <div class="col">
+                             <label>Soyisim:</label>
+                            <input type="text" class="form-control-plaintext" placeholder="______________________________">
+                        </div>
+                        <div class="col">
+                             <label>Telefon:</label>
+                            <input type="text" class="form-control-plaintext" placeholder="______________________________">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Seçim Kutuları</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Şehir Seçiniz</label>
+                            <select class="form-select">
+                                <option>Ankara</option>
+                                <option>Eskişehir</option>
+                                <option>İzmir</option>
+                                <option>İstanbul</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                             <label class="form-label">İlgilendiğiniz Eğitimleri Seçiniz</label>
+                             <select class="form-select" multiple>
+                                <option>Web Yazılım Uzmanlığı</option>
+                                <option>İleri Yazılım Uzmanlığı</option>
+                                <option>Front-end Yazılım Uzmanlığı</option>
+                                <option>Mobil Yazılım Uzmanlığı</option>
+                                <option>.Net Core Yazılım Uzmanlığı</option>
+                             </select>
+                        </div>
+                        <div class="mb-3">
+                             <label class="form-label">İlgilendiğiniz Eğitimleri Seçiniz</label>
+                             <input class="form-control" list="egitimler">
+                             <datalist id="egitimler">
+                                <option value="Web Yazılım Uzmanlığı"></option>
+                                <option value="İleri Yazılım Uzmanlığı"></option>
+                                <option value="Front-end Yazılım Uzmanlığı"></option>
+                                <option value="Mobil Yazılım Uzmanlığı"></option>
+                                <option value=".Net Core Yazılım Uzmanlığı"></option>
+                             </datalist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>CheckBox Ve Radio Button</h3>
+                    </div>
+                    <div class="card-body">
+                         <h4>CheckBox</h4>
+                       <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="secenek1" checked>
+                            <label class="form-check-label" for="secenek1">Seçenek 1</label>
+                       </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="secenek2">
+                            <label class="form-check-label" for="secenek2">Seçenek 2</label>
+                       </div>
+                       <h4 class="mt-3">Radio Button</h4>
+                       <div class="form-check">
+                            <input type="radio" class="form-check-input" id="r1" name="group">
+                            <label class="form-check-label" for="r1">Seçenek 1</label>
+                       </div>
+                       <div class="form-check">
+                            <input type="radio" class="form-check-input" id="r2" name="group">
+                            <label class="form-check-label" for="r2"> Seçenek 2</label>
+                       </div>
+                       <div class="form-check">
+                            <input type="radio" class="form-check-input" id="r3" name="group">
+                            <label class="form-check-label" for="r3">Seçenek 3</label>
+                       </div>
+                        <h4 class="mt-3">Şekilli Şukullu checkbox(switch)</h4>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="secenek1" checked>
+                            <label class="form-check-label" for="secenek1">Seçenek 1</label>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Şekilli Şukullu form (Form-group)</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="input-group mt-2">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Kullanıcı Adı">
+                            </div>
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control" placeholder="mail">
+                                <span class="input-group-text">@hotmail.com</span>
+                            </div>
+                        </div>
+                         <div class="mb-3">
+                            <div class="input-group mt-2">
+                                <span class="input-group-text">Personel</span>
+                                <input type="text" class="form-control" placeholder="Adı">
+                                <input type="text" class="form-control" placeholder="Soyadı">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control" placeholder="Aranacak Ürün Adı Veya Numarası">
+                                <button class="btn btn-outline-primary" type="button">Ara</button>
+                            </div>
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control" placeholder="Güvenlik Kodu">
+                                <button class="btn btn-primary" type="button">Tamam</button>
+                                 <button class="btn btn-danger" type="button">İptal</button>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                             <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.6/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.6/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
